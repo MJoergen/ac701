@@ -1,6 +1,13 @@
 # ac701
 Test designs for the AC701 evaluation board
 
+## Installation
+Create a new file `/etc/sudoers.d/pcirescan` with the following contents:
+```
+ALL ALL = NOPASSWD:/home/mike/git/MJoergen/ac701/rescan.sh
+```
+
+
 ## ep1
 
 ### Rescan after loading new FPGA bitstream via JTAG:
@@ -17,4 +24,5 @@ Link: [https://adaptivesupport.amd.com/s/question/0D52E00006iHlNoSAK/lspci-repor
 ```
 sudo /home/mike/bin/pcimem /sys/bus/pci/devices/0000\:02\:00.0/resource0 0x0 w 0x1234
 ```
+
 

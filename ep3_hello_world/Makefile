@@ -1,13 +1,20 @@
+# This Makefile is based on the chapter "Scripting the Non Project Mode"
+# in ug939 "Vivado Design Suite Tutorial: Designing with IP".
+# https://docs.amd.com/r/2022.2-English/ug939-vivado-designing-with-ip-tutorial/Scripting-the-Non-Project-Mode
+
 XILINX_DIR = /opt/Xilinx/Vivado/2024.1
 
 PROJECT = hello_world
 PLATFORM = ac701
 
-TOP = $(PROJECT)_$(PLATFORM)
+TOP = xilinx_axi_pcie_ep
 
-SRCS += $(TOP).vhd
+SRCS += src/xilinx_axi_pcie_ep.vhd
 
-XDC = ../$(PLATFORM).xdc
+IPS += src/axi_bram_ctrl_0/axi_bram_ctrl_0.xci
+IPS += src/axi_pcie_0/axi_pcie_0.xci
+
+XDC = src/xilinx_axi_pcie_7x_ep_x1g1_X0Y0.xdc
 
 PART = xc7a200tfbg676-2
 
@@ -17,9 +24,13 @@ $(TOP).bit: $(TOP).tcl $(SRCS) $(XDC) Makefile
 $(TOP).tcl: Makefile
 	echo "# This is a tcl command script for the Vivado tool chain" > $@
 	echo "read_vhdl -vhdl2008 { $(SRCS) }" >> $@
-	echo "read_xdc $(XDC)" >> $@
+	echo "read_ip { $(IPS) }" >> $@
+	echo "read_xdc { $(XDC) }" >> $@
+	echo "set_property BOARD_PART xilinx.com:ac701:part0:1.4 [current_project]" >> $@
 	echo "set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]" >> $@
-	echo "synth_design -top $(TOP) -part $(PART) -flatten_hierarchy none $(GENERICS)" >> $@
+	echo "generate_target all [get_ips] -force" >> $@
+	echo "synth_ip [get_ips]" >> $@
+	echo "synth_design -top $(TOP) -flatten_hierarchy none $(GENERICS)" >> $@
 	echo "write_checkpoint -force post_synth.dcp" >> $@
 	echo "opt_design" >> $@
 	echo "place_design" >> $@
@@ -43,4 +54,10 @@ clean:
 	rm -rf $(TOP).hw
 	rm -rf $(TOP).runs
 	rm -rf $(TOP).srcs
+
+program:
+	m65 -q $(TOP).bit
+
+rescan:
+	sudo ../rescan.sh
 
