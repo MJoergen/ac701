@@ -11,8 +11,10 @@ ALL ALL = NOPASSWD:/home/mike/git/MJoergen/ac701/rescan.sh
 ## ep1
 
 ### Rescan after loading new FPGA bitstream via JTAG:
-\# echo 1 > /sys/devices/pci0000:00/0000:00:1b.4/0000:02:00.0/remove
-\# echo 1 > /sys/bus/pci/rescan
+```
+# echo 1 > /sys/devices/pci0000:00/0000:00:1b.4/0000:02:00.0/remove
+# echo 1 > /sys/bus/pci/rescan
+```
 
 ### Enable PCI memory mapped transfers
 ```
