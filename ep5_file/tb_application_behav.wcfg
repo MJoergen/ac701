@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_application_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_application" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="461.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="857.001 ns"></ZoomEndTime>
+      <Cursor1Time time="560.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="345"></NameColumnWidth>
+      <ValueColumnWidth column_width="375"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group109">
+      <obj_property name="label">tb_application</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/tb_application/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/rst">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/avmm_address">
+         <obj_property name="ElementShortName">avmm_address[15:0]</obj_property>
+         <obj_property name="ObjectShortName">avmm_address[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/avmm_byteenable">
+         <obj_property name="ElementShortName">avmm_byteenable[7:0]</obj_property>
+         <obj_property name="ObjectShortName">avmm_byteenable[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/avmm_read">
+         <obj_property name="ElementShortName">avmm_read</obj_property>
+         <obj_property name="ObjectShortName">avmm_read</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/avmm_readdata">
+         <obj_property name="ElementShortName">avmm_readdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">avmm_readdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/avmm_readdatavalid">
+         <obj_property name="ElementShortName">avmm_readdatavalid</obj_property>
+         <obj_property name="ObjectShortName">avmm_readdatavalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/avmm_waitrequest">
+         <obj_property name="ElementShortName">avmm_waitrequest</obj_property>
+         <obj_property name="ObjectShortName">avmm_waitrequest</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/avmm_write">
+         <obj_property name="ElementShortName">avmm_write</obj_property>
+         <obj_property name="ObjectShortName">avmm_write</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/avmm_writedata">
+         <obj_property name="ElementShortName">avmm_writedata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">avmm_writedata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/avmm_response">
+         <obj_property name="ElementShortName">avmm_response[1:0]</obj_property>
+         <obj_property name="ObjectShortName">avmm_response[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/avmm_writeresponsevalid">
+         <obj_property name="ElementShortName">avmm_writeresponsevalid</obj_property>
+         <obj_property name="ObjectShortName">avmm_writeresponsevalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_awready">
+         <obj_property name="ElementShortName">axil_awready</obj_property>
+         <obj_property name="ObjectShortName">axil_awready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_awvalid">
+         <obj_property name="ElementShortName">axil_awvalid</obj_property>
+         <obj_property name="ObjectShortName">axil_awvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awaddr">
+         <obj_property name="ElementShortName">axil_awaddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awaddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awlen">
+         <obj_property name="ElementShortName">axil_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awsize">
+         <obj_property name="ElementShortName">axil_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awburst">
+         <obj_property name="ElementShortName">axil_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_awlock">
+         <obj_property name="ElementShortName">axil_awlock</obj_property>
+         <obj_property name="ObjectShortName">axil_awlock</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awcache">
+         <obj_property name="ElementShortName">axil_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awprot">
+         <obj_property name="ElementShortName">axil_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_awid">
+         <obj_property name="ElementShortName">axil_awid[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_awid[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_wready">
+         <obj_property name="ElementShortName">axil_wready</obj_property>
+         <obj_property name="ObjectShortName">axil_wready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_wvalid">
+         <obj_property name="ElementShortName">axil_wvalid</obj_property>
+         <obj_property name="ObjectShortName">axil_wvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_wdata">
+         <obj_property name="ElementShortName">axil_wdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_wdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_wstrb">
+         <obj_property name="ElementShortName">axil_wstrb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_wstrb[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_wlast">
+         <obj_property name="ElementShortName">axil_wlast</obj_property>
+         <obj_property name="ObjectShortName">axil_wlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_bready">
+         <obj_property name="ElementShortName">axil_bready</obj_property>
+         <obj_property name="ObjectShortName">axil_bready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_bvalid">
+         <obj_property name="ElementShortName">axil_bvalid</obj_property>
+         <obj_property name="ObjectShortName">axil_bvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_bresp">
+         <obj_property name="ElementShortName">axil_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_bid">
+         <obj_property name="ElementShortName">axil_bid[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_bid[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_arready">
+         <obj_property name="ElementShortName">axil_arready</obj_property>
+         <obj_property name="ObjectShortName">axil_arready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_arvalid">
+         <obj_property name="ElementShortName">axil_arvalid</obj_property>
+         <obj_property name="ObjectShortName">axil_arvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_araddr">
+         <obj_property name="ElementShortName">axil_araddr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_araddr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arlen">
+         <obj_property name="ElementShortName">axil_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arsize">
+         <obj_property name="ElementShortName">axil_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arburst">
+         <obj_property name="ElementShortName">axil_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_arlock">
+         <obj_property name="ElementShortName">axil_arlock</obj_property>
+         <obj_property name="ObjectShortName">axil_arlock</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arcache">
+         <obj_property name="ElementShortName">axil_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arprot">
+         <obj_property name="ElementShortName">axil_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_arid">
+         <obj_property name="ElementShortName">axil_arid[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_arid[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_rready">
+         <obj_property name="ElementShortName">axil_rready</obj_property>
+         <obj_property name="ObjectShortName">axil_rready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_rlast">
+         <obj_property name="ElementShortName">axil_rlast</obj_property>
+         <obj_property name="ObjectShortName">axil_rlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/axil_rvalid">
+         <obj_property name="ElementShortName">axil_rvalid</obj_property>
+         <obj_property name="ObjectShortName">axil_rvalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_rdata">
+         <obj_property name="ElementShortName">axil_rdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_rdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_rresp">
+         <obj_property name="ElementShortName">axil_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/axil_rid">
+         <obj_property name="ElementShortName">axil_rid[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axil_rid[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/uart_rx_ready">
+         <obj_property name="ElementShortName">uart_rx_ready</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_ready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/uart_rx_valid">
+         <obj_property name="ElementShortName">uart_rx_valid</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/uart_rx_data">
+         <obj_property name="ElementShortName">uart_rx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/uart_tx_ready">
+         <obj_property name="ElementShortName">uart_tx_ready</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_ready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/uart_tx_valid">
+         <obj_property name="ElementShortName">uart_tx_valid</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/uart_tx_data">
+         <obj_property name="ElementShortName">uart_tx_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_data[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group179">
+      <obj_property name="label">application</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/clk_i">
+         <obj_property name="ElementShortName">clk_i</obj_property>
+         <obj_property name="ObjectShortName">clk_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/rst_i">
+         <obj_property name="ElementShortName">rst_i</obj_property>
+         <obj_property name="ObjectShortName">rst_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awaddr_i">
+         <obj_property name="ElementShortName">axi_awaddr_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awlen_i">
+         <obj_property name="ElementShortName">axi_awlen_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awlen_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awsize_i">
+         <obj_property name="ElementShortName">axi_awsize_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awsize_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awburst_i">
+         <obj_property name="ElementShortName">axi_awburst_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awburst_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_awlock_i">
+         <obj_property name="ElementShortName">axi_awlock_i</obj_property>
+         <obj_property name="ObjectShortName">axi_awlock_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awcache_i">
+         <obj_property name="ElementShortName">axi_awcache_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awcache_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_awprot_i">
+         <obj_property name="ElementShortName">axi_awprot_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awprot_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_awvalid_i">
+         <obj_property name="ElementShortName">axi_awvalid_i</obj_property>
+         <obj_property name="ObjectShortName">axi_awvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_awready_o">
+         <obj_property name="ElementShortName">axi_awready_o</obj_property>
+         <obj_property name="ObjectShortName">axi_awready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_wdata_i">
+         <obj_property name="ElementShortName">axi_wdata_i[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_wdata_i[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_wstrb_i">
+         <obj_property name="ElementShortName">axi_wstrb_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_wstrb_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_wlast_i">
+         <obj_property name="ElementShortName">axi_wlast_i</obj_property>
+         <obj_property name="ObjectShortName">axi_wlast_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_wvalid_i">
+         <obj_property name="ElementShortName">axi_wvalid_i</obj_property>
+         <obj_property name="ObjectShortName">axi_wvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_wready_o">
+         <obj_property name="ElementShortName">axi_wready_o</obj_property>
+         <obj_property name="ObjectShortName">axi_wready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_bresp_o">
+         <obj_property name="ElementShortName">axi_bresp_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_bresp_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_bvalid_o">
+         <obj_property name="ElementShortName">axi_bvalid_o</obj_property>
+         <obj_property name="ObjectShortName">axi_bvalid_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_bready_i">
+         <obj_property name="ElementShortName">axi_bready_i</obj_property>
+         <obj_property name="ObjectShortName">axi_bready_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_araddr_i">
+         <obj_property name="ElementShortName">axi_araddr_i[15:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_araddr_i[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_arlen_i">
+         <obj_property name="ElementShortName">axi_arlen_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_arlen_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_arsize_i">
+         <obj_property name="ElementShortName">axi_arsize_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_arsize_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_arburst_i">
+         <obj_property name="ElementShortName">axi_arburst_i[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_arburst_i[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_arlock_i">
+         <obj_property name="ElementShortName">axi_arlock_i</obj_property>
+         <obj_property name="ObjectShortName">axi_arlock_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_arcache_i">
+         <obj_property name="ElementShortName">axi_arcache_i[3:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_arcache_i[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_arprot_i">
+         <obj_property name="ElementShortName">axi_arprot_i[2:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_arprot_i[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_arvalid_i">
+         <obj_property name="ElementShortName">axi_arvalid_i</obj_property>
+         <obj_property name="ObjectShortName">axi_arvalid_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_arready_o">
+         <obj_property name="ElementShortName">axi_arready_o</obj_property>
+         <obj_property name="ObjectShortName">axi_arready_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_rdata_o">
+         <obj_property name="ElementShortName">axi_rdata_o[63:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_rdata_o[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/axi_rresp_o">
+         <obj_property name="ElementShortName">axi_rresp_o[1:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_rresp_o[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_rlast_o">
+         <obj_property name="ElementShortName">axi_rlast_o</obj_property>
+         <obj_property name="ObjectShortName">axi_rlast_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_rvalid_o">
+         <obj_property name="ElementShortName">axi_rvalid_o</obj_property>
+         <obj_property name="ObjectShortName">axi_rvalid_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/axi_rready_i">
+         <obj_property name="ElementShortName">axi_rready_i</obj_property>
+         <obj_property name="ObjectShortName">axi_rready_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/uart_rx_ready_o">
+         <obj_property name="ElementShortName">uart_rx_ready_o</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_ready_o</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/uart_rx_valid_i">
+         <obj_property name="ElementShortName">uart_rx_valid_i</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_valid_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/uart_rx_data_i">
+         <obj_property name="ElementShortName">uart_rx_data_i[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_rx_data_i[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/uart_tx_ready_i">
+         <obj_property name="ElementShortName">uart_tx_ready_i</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_ready_i</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/uart_tx_valid_o">
+         <obj_property name="ElementShortName">uart_tx_valid_o</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_valid_o</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/uart_tx_data_o">
+         <obj_property name="ElementShortName">uart_tx_data_o[7:0]</obj_property>
+         <obj_property name="ObjectShortName">uart_tx_data_o[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/start_ready">
+         <obj_property name="ElementShortName">start_ready</obj_property>
+         <obj_property name="ObjectShortName">start_ready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/start_valid">
+         <obj_property name="ElementShortName">start_valid</obj_property>
+         <obj_property name="ObjectShortName">start_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/avm_write">
+         <obj_property name="ElementShortName">avm_write</obj_property>
+         <obj_property name="ObjectShortName">avm_write</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/avm_read">
+         <obj_property name="ElementShortName">avm_read</obj_property>
+         <obj_property name="ObjectShortName">avm_read</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/avm_address">
+         <obj_property name="ElementShortName">avm_address[15:0]</obj_property>
+         <obj_property name="ObjectShortName">avm_address[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/avm_writedata">
+         <obj_property name="ElementShortName">avm_writedata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">avm_writedata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/avm_byteenable">
+         <obj_property name="ElementShortName">avm_byteenable[7:0]</obj_property>
+         <obj_property name="ObjectShortName">avm_byteenable[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/avm_readdata">
+         <obj_property name="ElementShortName">avm_readdata[63:0]</obj_property>
+         <obj_property name="ObjectShortName">avm_readdata[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/avm_readdatavalid">
+         <obj_property name="ElementShortName">avm_readdatavalid</obj_property>
+         <obj_property name="ObjectShortName">avm_readdatavalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/avm_waitrequest">
+         <obj_property name="ElementShortName">avm_waitrequest</obj_property>
+         <obj_property name="ObjectShortName">avm_waitrequest</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/avm_writeresponsevalid">
+         <obj_property name="ElementShortName">avm_writeresponsevalid</obj_property>
+         <obj_property name="ObjectShortName">avm_writeresponsevalid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/avm_response">
+         <obj_property name="ElementShortName">avm_response[1:0]</obj_property>
+         <obj_property name="ObjectShortName">avm_response[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/mem_addr">
+         <obj_property name="ElementShortName">mem_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/mem_wr_en">
+         <obj_property name="ElementShortName">mem_wr_en[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_en[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/mem_wr_data">
+         <obj_property name="ElementShortName">mem_wr_data[63:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_wr_data[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/mem_rd_data">
+         <obj_property name="ElementShortName">mem_rd_data[63:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_rd_data[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/tb_application/application_inst/cnt">
+         <obj_property name="ElementShortName">cnt</obj_property>
+         <obj_property name="ObjectShortName">cnt</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_application/application_inst/ram_wr_en">
+         <obj_property name="ElementShortName">ram_wr_en</obj_property>
+         <obj_property name="ObjectShortName">ram_wr_en</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/ram_wr_addr">
+         <obj_property name="ElementShortName">ram_wr_addr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_wr_addr[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_application/application_inst/ram_wr_data">
+         <obj_property name="ElementShortName">ram_wr_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ram_wr_data[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
