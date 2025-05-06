@@ -1,30 +1,24 @@
-# ac701
-Test designs for the AC701 evaluation board
+# Introduction
+This repo contains various test designs for the AC701 evaluation board from AMD. One
+of the purposes of this repo is to experiment with the MultiBoot feature.
 
-## Installation
-Create a new file `/etc/sudoers.d/pcirescan` with the following contents:
-```
-ALL ALL = NOPASSWD:/home/mike/git/MJoergen/ac701/rescan.sh
-```
+List of episodes:
+1.  This is the fundamental PCIe example design provided with Vivado
+2.  This is the fundamental AXI example design provided with Vivado
+3.  This is a simple hard-coded Hello World application using the PCIe endpoint
+4.  This is a more generic application using the PCIe endpoint
+5.  This episode experiments with transferring large files over the PCI link.
 
+The first episodes uses the Vivado GUI (in project flow), while the later episodes uses Vivado in non-project flow.
 
-## ep1
+# AC701
+The AC701 evaluation board is a PCIe expansion card for a desktop computer.
+It has an Artix 7 AMD FPGA with a Gigabit Transceiver capable of running PCIe x4 Gen 2.
+With AMD Vivado follows a bare-bones PCIe endpoint IP block, described in
+[../doc/pg054-7series-pcie-en-us-3.3.pdf](pg054-7series-pcie-en-us-3.3.pdf). Furthermore, AMD Vivado provides
+an AXI memory mapped interface for easier integration into user designs, described in
+[../doc/pg055-axi-bridge-pcie-en-us-2.9.pdf](pg055-axi-bridge-pcie-en-us-2.9.pdf).
 
-### Rescan after loading new FPGA bitstream via JTAG:
-```
-# echo 1 > /sys/devices/pci0000:00/0000:00:1b.4/0000:02:00.0/remove
-# echo 1 > /sys/bus/pci/rescan
-```
-
-### Enable PCI memory mapped transfers
-```
-sudo setpci -s 02:00.0 COMMAND=0x02
-```
-Link: [https://adaptivesupport.amd.com/s/question/0D52E00006iHlNoSAK/lspci-reports-bar-0-disabled?language=en_US](https://adaptivesupport.amd.com/s/question/0D52E00006iHlNoSAK/lspci-reports-bar-0-disabled?language=en_US)
-
-### Test
-```
-sudo /home/mike/bin/pcimem /sys/bus/pci/devices/0000\:02\:00.0/resource0 0x0 w 0x1234
-```
-
+# MultiBoot
+The AC701 board also has an onboard flash, which is necessary to support MultiBoot.
 
